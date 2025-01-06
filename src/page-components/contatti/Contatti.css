@@ -1,0 +1,36 @@
+/* Contenitore principale */
+.container-contatti {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Altezza piena per centrare verticalmente */
+  /*background-color: #060000; /* Sfondo grigio chiaro */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Box dei contatti */
+.contact-box {
+  background-color: #fff; /* Sfondo bianco */
+  border-radius: 15px; /* Bordi smussati */
+  padding: 30px 40px; /* Spazio interno */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombra */
+  text-align: center; /* Testo centrato */
+  max-width: 400px; /* Larghezza massima */
+  width: 90%; /* Adattamento per schermi piccoli */
+}
+
+/* Titolo */
+.contact-box h2 {
+  font-size: 1.8rem;
+  color: #333; /* Colore scuro */
+  margin-bottom: 20px;
+}
+
+/* Testo */
+.contact-box p {
+  font-size: 1rem;
+  color: #555; /* Colore grigio medio */
+  margin: 10px 0;
+  line-height: 1.5;
+}
