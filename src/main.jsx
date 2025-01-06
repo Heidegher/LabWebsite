@@ -1,10 +1,8 @@
-// main.jsx
-import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import App from "./App.jsx";
 
-// 1. (Optional) Customize your theme via extendTheme()
+//global theme for chakra
 const theme = extendTheme({
   fonts: {
     heading: "'Cormorant Garamond', serif",
@@ -18,7 +16,7 @@ const theme = extendTheme({
         height: "100%",
         boxSizing: "border-box",
         scrollBehavior: "smooth",
-        fontSize: "1.18rem"
+        fontSize: "1.18rem",
       },
       "#root": {
         height: "100%",
@@ -28,7 +26,7 @@ const theme = extendTheme({
 });
 
 createRoot(document.getElementById("root")).render(
-    <ChakraProvider theme={theme}>
-      <App />
-    </ChakraProvider>
+  <ChakraProvider theme={theme}>
+    <App />
+  </ChakraProvider>
 );

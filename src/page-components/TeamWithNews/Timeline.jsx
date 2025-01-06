@@ -1,4 +1,3 @@
-// src/page-components/News/Timeline.jsx
 import React from "react";
 import {
   Box,
@@ -14,6 +13,7 @@ import {
 import { teamMembers } from "./teamMembers";
 import { newsItems } from "./news";
 
+//single timeline item
 const TimelineItem = ({ date, description, members }) => {
   const lineColor = useColorModeValue("teal.500", "teal.300");
   const textColor = useColorModeValue("gray.700", "gray.200");
@@ -100,7 +100,7 @@ const TimelineItem = ({ date, description, members }) => {
     </Flex>
   );
 };
-
+// main timeline for team members
 const Timeline = () => {
   return (
     <Box

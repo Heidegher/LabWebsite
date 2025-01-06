@@ -13,8 +13,7 @@ import {
 } from "@chakra-ui/react";
 import { Link as RouterLink } from "react-router-dom";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
-import { teamMembers } from "../TeamWithNews/teamMembers"; // Adjust the path as necessary
-
+import { teamMembers } from "../TeamWithNews/teamMembers";
 const BATCH_SIZE = 5;
 
 const Papers = () => {
@@ -36,7 +35,6 @@ const Papers = () => {
         const query = teamMembers
           .map((member) => `"${member.name.split(" ").slice(-1)[0]}"`)
           .join(" OR ");
-        console.log("PubMed Query:", query);
 
         // Fetch PMIDs for all team members in a single request
         const searchResponse = await fetch(
@@ -107,7 +105,7 @@ const Papers = () => {
                   pdfLink = `https://www.ncbi.nlm.nih.gov/pmc/articles/${pmcIdObj.value}/pdf/`;
                 }
               }
-
+              //set full article inside map to be unique on pmid
               uniqueArticles.set(pmid, {
                 title: articleData.title || "No title available",
                 authors:

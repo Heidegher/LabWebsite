@@ -1,12 +1,5 @@
-// HomePage.jsx
 import React from "react";
-import {
-  Box,
-  Heading,
-  Text,
-  Button,
-  Stack,
-} from "@chakra-ui/react";
+import { Box, Heading, Text, Button, Stack } from "@chakra-ui/react";
 import { Link as RouterLink } from "react-router-dom";
 import { AttachmentIcon, InfoOutlineIcon } from "@chakra-ui/icons";
 
@@ -61,10 +54,11 @@ const HomePage = () => {
           fontSize={{ base: "lg", md: "2xl", lg: "3xl" }}
           maxW={{ base: "90%", md: "70%", lg: "60%" }}
         >
-          The Gerbino Lab explores how motor neurons and glial cells communicate,
-          seeking to unravel their role in neurodegenerative disease progression.
-          We investigate the cellular and molecular mechanisms underlying
-          neurodegeneration, striving to identify novel therapeutic strategies.
+          The Gerbino Lab explores how motor neurons and glial cells
+          communicate, seeking to unravel their role in neurodegenerative
+          disease progression. We investigate the cellular and molecular
+          mechanisms underlying neurodegeneration, striving to identify novel
+          therapeutic strategies.
         </Text>
 
         <Text
@@ -83,9 +77,9 @@ const HomePage = () => {
         <Stack
           direction={{ base: "column", md: "row" }}
           spacing={{ base: 4, md: 8 }}
-          mt={{ base: 10, md: 12 }}      // more space between text and buttons
+          mt={{ base: 10, md: 12 }} // more space between text and buttons
           alignItems="center"
-          justifyContent="center"        // center buttons horizontally on desktop
+          justifyContent="center" // center buttons horizontally on desktop
           w="full"
           maxW={{ base: "90%", md: "80%", lg: "60%" }}
         >

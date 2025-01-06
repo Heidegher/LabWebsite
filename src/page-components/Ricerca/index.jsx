@@ -288,32 +288,6 @@ const Ricerca = () => {
         </Container>
       </Box>
 
-      {/* ==================== CTA BAND #3: TEAM ====================
-      <Box as="section" bg="teal.200" py={{ base: 10, md: 16 }}>
-        <Container maxW="1400px">
-          <Flex direction="column" align="center" textAlign="center" gap={6}>
-            <Heading as="h2" size="xl">
-              Join Our Team
-            </Heading>
-            <Text fontSize={{ base: "md", md: "lg" }}>
-              Want to learn more about the people behind our research? Meet the
-              dedicated team working to revolutionize ALS treatments.
-            </Text>
-            <Button
-              as={RouterLink}
-              to="/team"
-              size="lg"
-              colorScheme="purple"
-              variant="solid"
-              textTransform="uppercase"
-              rightIcon={<InfoOutlineIcon />}
-            >
-              Meet the Team
-            </Button>
-          </Flex>
-        </Container>
-      </Box> */}
-
       {/* ==================== CTA BAND #1 ==================== */}
       <Box as="section" bg="teal.200" py={{ base: 10, md: 16 }}>
         <Container maxW="1400px">
@@ -350,7 +324,6 @@ const Ricerca = () => {
       <Box as="section" bg="gray.50" py={{ base: 10, md: 16 }}>
         <Container maxW="1400px">
           <Flex
-            // Now invert so text is first, image is second
             direction={{ base: "column", md: "row" }}
             gap={12}
             alignItems="center"

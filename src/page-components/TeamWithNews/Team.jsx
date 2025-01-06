@@ -1,4 +1,3 @@
-// src/page-components/News/Team.jsx
 import React from "react";
 import {
   Box,
@@ -134,7 +133,7 @@ const Team = () => {
                   color="gray.600"
                   mb={3}
                   textTransform="uppercase"
-                  fontSize="md" // Increased font size
+                  fontSize="md"
                 >
                   {member.role}
                 </Text>
